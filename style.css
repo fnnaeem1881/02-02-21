@@ -1,0 +1,60 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.banner{
+    background: url(banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-weight: 700;
+}
+.overley {
+    background: #9bd4b487;
+    width: 100%;
+    height: 100vh;
+}
+
+.title h1 {
+    font-size: 35px;
+}
+
+.title h3 {
+    font-size: 25px;
+    color: #292021;
+}
+#secound{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+}
+.heart {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)rotate(45deg);
+}
+
+
+.heart:after {content: '';height: 200px;width: 200px;background: red;position: absolute;left: -50%;border-radius: 50%;}
+
+.heart::before {content: '';height: 200px;width: 200px;background: red;border-radius: 50%;position: absolute;top: -50%;}
